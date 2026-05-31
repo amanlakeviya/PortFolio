@@ -129,6 +129,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 2.2rem;
+    align-items: start;
   }
   
   .entry {
@@ -392,6 +393,31 @@
     font-size: 12px;
   }
   
+  /* Interest tags (to fill bottom gap) */
+  .interest-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  
+  .interest-tag {
+    background: #f0f2f5;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #2c3e50;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .interest-tag i {
+    font-size: 12px;
+    color: #5a6e7c;
+  }
+  
   .footer {
     margin-top: 2rem;
     padding-top: 1rem;
@@ -536,12 +562,12 @@
     <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780227266/57b3c985-6692-4127-9f35-fe10a0ac492b_ikdwza.jpg" alt="Aman Kumar profile" class="profile-img" />
     <div class="header-text">
       <h1 class="name">Aman Kumar</h1>
-      <p class="tagline">AI Product Builder · Published Author · Agentic AI Enthusiast · Web Developer · Content Creator</p>
+      <p class="tagline">AI Product Builder · Author · Agentic AI Enthusiast · Content Creator</p>
       <div class="contact-row">
         <span><i class="ti ti-map-pin"></i> UP, India</span>
         <span><i class="ti ti-phone"></i> +91 9369786632</span>
         <a href="mailto:raoa57471@gmail.com"><i class="ti ti-mail"></i> raoa57471@gmail.com</a>
-        <a href="https://www.linkedin.com/in/aman-kumar-44a8a6288" target="_blank"><i class="ti ti-brand-linkedin"></i> linkedin.com/in/amankumarx</a>
+        <a href="https://www.linkedin.com/in/aman-kumar-44a8a6288" target="_blank"><i class="ti ti-brand-linkedin"></i> linkedin.com/in/amankumar</a>
       </div>
     </div>
   </div>
@@ -561,7 +587,7 @@
             <span class="entry-title">B.Tech — Electronics & Communication</span>
             <span class="entry-meta">2023 – 2027</span>
           </div>
-          <div class="entry-sub">MJPRU, Rohilkhand</div>
+          <div class="entry-sub">MJPRU, Rohilkhand, Bareilly</div>
           <p>CGPA: 6.5 / 10.0</p>
         </div>
       </div>
@@ -614,7 +640,7 @@
         </div>
       </div>
 
-      <!-- ACHIEVEMENTS & RECOGNITION - MOVED HERE (below Languages) -->
+      <!-- ACHIEVEMENTS SECTION -->
       <div class="section">
         <div class="section-title">Achievements & Recognition</div>
         
@@ -650,6 +676,22 @@
         <div class="cert-item">
           <span class="cert-star"><i class="ti ti-brand-youtube"></i></span>
           <span>15,000+ YouTube subscribers | Digital brand growth</span>
+        </div>
+      </div>
+
+      <!-- NEW SECTION: INTERESTS & INVOLVEMENT (fills remaining gap) -->
+      <div class="section">
+        <div class="section-title">Beyond Code</div>
+        <div class="interest-grid">
+          <span class="interest-tag"><i class="ti ti-microphone"></i> Tech Blogging</span>
+          <span class="interest-tag"><i class="ti ti-users"></i> Mentoring</span>
+          <span class="interest-tag"><i class="ti ti-book"></i> Reading</span>
+          <span class="interest-tag"><i class="ti ti-heart"></i> Open Source</span>
+          <span class="interest-tag"><i class="ti ti-camera"></i> Content Creation</span>
+          <span class="interest-tag"><i class="ti ti-brand-python"></i> AI Ethics</span>
+        </div>
+        <div style="margin-top: 8px; font-size: 11px; color: #5a6e7c; line-height: 1.5;">
+          <i class="ti ti-pen"></i> “Building technology that empowers creators and learners.”
         </div>
       </div>
     </div>
@@ -724,7 +766,7 @@
         <div class="entry">
           <div class="entry-header">
             <span class="entry-title">Lakeviya Aggretor</span>
-            <a href="https://github.com/amanlakeviya" target="_blank" class="project-link"><i class="ti ti-brand-github"></i> GitHub</a>
+            <a href="https://github.com/amanlakeviya" target="_blank" class="project-link"><i class="ti ti-brand-github"></i> Live Demo</a>
           </div>
           <div class="entry-sub">AI trend tracking · news aggregation</div>
           <ul class="bullets">
@@ -746,7 +788,6 @@
         </div>
       </div>
 
-      <!-- Leadership & Entrepreneurship Section -->
       <div class="section">
         <div class="section-title">Leadership & Entrepreneurship</div>
         <ul class="bullets">
@@ -760,7 +801,6 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     <div class="social-footer">
       <a href="https://www.instagram.com/aman.lakeviya?igsh=MXBra3V1ZjlucHRxeQ==&utm_source=ig_contact_invite" target="_blank"><i class="ti ti-brand-instagram"></i></a>
