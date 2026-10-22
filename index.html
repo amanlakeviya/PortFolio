@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="description" content="Aman Kumar — AI Product Builder, Published Author, Agentic AI Enthusiast, Web Developer. 6+ AI projects, 15K+ YouTube creator, Author of 'DecodeTheBranddd'." />
-<title>Aman Kumar | AI Product Builder · Author · Agentic AI Portfolio</title>
+<meta name="description" content="Aman Kumar — AI Product Builder, Founder, Published Author. Top 1% Portfolio." />
+<meta name="author" content="Aman Kumar" />
+<title>Aman Kumar | AI Product Builder & Founder</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
   
   *, *::before, *::after {
     box-sizing: border-box;
@@ -16,124 +17,152 @@
   }
   
   body {
-    background: #ffffff;
-    color: #1a1a1a;
-    line-height: 1.4;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
   }
   
   :root {
-    --color-text-primary: #1a1a1a;
-    --color-text-secondary: #4a4a4a;
-    --color-border-secondary: #d4d4d4;
-    --color-border-tertiary: #e8e8e8;
-    --color-background-secondary: #f8f8f8;
-    --color-accent-blue: #1a5b9e;
-    --color-accent-blue-light: #eef3fc;
-    --color-accent-purple: #6b21a5;
-    --color-accent-green: #2d6a4f;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --accent-blue: #2563eb;
+    --accent-blue-bg: #eff6ff;
+    --accent-purple: #7c3aed;
+    --accent-purple-bg: #f5f3ff;
+    --border-light: #e2e8f0;
+    --bg-card: #ffffff;
+    --badge-gold: #b45309;
+    --badge-gold-bg: #fffbeb;
   }
   
   .resume {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 13px;
-    color: var(--color-text-primary);
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 1rem;
-    background: #fff;
+    color: var(--text-main);
+    max-width: 920px;
+    margin: 2rem auto;
+    background: var(--bg-card);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+    border: 1px solid var(--border-light);
+    padding: 2.5rem;
   }
   
   .header {
-    border-bottom: 2px solid var(--color-text-primary);
-    padding-bottom: 1rem;
-    margin-bottom: 1.4rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.03);
   }
   
   .header-text {
     flex: 1;
-    min-width: 200px;
-  }
-  
-  .profile-img {
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid var(--color-border-secondary);
-    transition: transform 0.2s;
-  }
-  
-  .profile-img:hover {
-    transform: scale(1.02);
   }
   
   .name {
     font-family: 'DM Serif Display', serif;
-    font-size: 38px;
+    font-size: 44px;
     font-weight: 400;
-    margin: 0 0 4px;
-    letter-spacing: -0.8px;
+    letter-spacing: -1px;
+    color: var(--text-main);
+    line-height: 1.1;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .top-badge {
+    display: inline-block;
+    background: var(--badge-gold-bg);
+    color: var(--badge-gold);
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    border: 1px solid #fcd34d;
+    text-transform: uppercase;
   }
   
   .tagline {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--color-text-secondary);
-    margin: 0 0 12px;
+    color: var(--accent-blue);
+    background: var(--accent-blue-bg);
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    margin: 4px 0 14px;
+    letter-spacing: 0.3px;
   }
   
   .contact-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 20px;
+    gap: 12px 20px;
     font-size: 12px;
-    color: var(--color-text-secondary);
+    color: var(--text-muted);
   }
   
   .contact-row a {
-    color: var(--color-text-secondary);
+    color: var(--text-muted);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     transition: color 0.2s;
   }
   
   .contact-row a:hover {
-    color: var(--color-text-primary);
-    text-decoration: underline;
+    color: var(--accent-blue);
   }
   
   .section {
-    margin-bottom: 1.6rem;
+    margin-bottom: 2rem;
   }
   
   .section-title {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 2.8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: #5a5a5a;
-    border-bottom: 1px solid var(--color-border-secondary);
-    padding-bottom: 5px;
-    margin-bottom: 14px;
+    color: var(--text-main);
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 6px;
+    margin-bottom: 16px;
   }
   
   .two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 2.2rem;
-    align-items: start;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 2.5rem;
   }
   
   .entry {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+  }
+  
+  .entry:last-child {
+    margin-bottom: 0;
   }
   
   .entry-header {
@@ -141,33 +170,46 @@
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
+    margin-bottom: 2px;
   }
   
   .entry-title {
     font-weight: 700;
     font-size: 14px;
-    letter-spacing: -0.2px;
-    color: #111;
+    color: var(--text-main);
   }
   
   .entry-sub {
     font-size: 12px;
-    color: var(--color-text-secondary);
-    margin-top: 2px;
+    color: var(--text-muted);
     font-weight: 500;
+    margin-bottom: 6px;
+  }
+  
+  .entry-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    background: #f1f5f9;
+    padding: 2px 8px;
+    border-radius: 4px;
   }
   
   .bullets {
-    margin: 8px 0 0;
-    padding-left: 20px;
+    margin: 0;
+    padding-left: 16px;
   }
   
   .bullets li {
-    font-size: 12px;
-    color: #3a3a3a;
-    line-height: 1.55;
-    margin-bottom: 5px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 6px;
+  }
+  
+  .bullets li strong {
+    color: var(--text-main);
   }
   
   .skills-grid {
@@ -177,26 +219,32 @@
   }
   
   .skill-tag {
-    background: var(--color-background-secondary);
-    border: 0.5px solid var(--color-border-tertiary);
-    border-radius: 20px;
-    padding: 4px 12px;
+    background: #f8fafc;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 5px 12px;
     font-size: 11.5px;
     font-weight: 500;
-    color: #2c2c2c;
+    color: var(--text-main);
+    transition: all 0.15s;
+  }
+  
+  .skill-tag:hover {
+    border-color: #cbd5e1;
+    background: #f1f5f9;
   }
   
   .skill-tag.highlight {
-    background: var(--color-accent-blue-light);
-    color: #135a94;
-    border-color: #bdd8f5;
+    background: var(--accent-blue-bg);
+    color: var(--accent-blue);
+    border-color: #bfdbfe;
   }
   
   .learning-section {
-    background: linear-gradient(135deg, #f8f4ff 0%, #faf5ff 100%);
-    border-radius: 16px;
-    padding: 14px 16px;
-    margin-top: 6px;
+    background: var(--accent-purple-bg);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #e9d5ff;
   }
   
   .learning-header {
@@ -208,97 +256,84 @@
   
   .learning-header i {
     font-size: 18px;
-    color: var(--color-accent-purple);
+    color: var(--accent-purple);
   }
   
   .learning-header span {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 12px;
-    letter-spacing: 1px;
-    color: var(--color-accent-purple);
-    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--accent-purple);
   }
   
   .learning-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
   }
   
   .learning-item {
     background: white;
-    border: 1px solid #e9d4ff;
-    border-radius: 24px;
-    padding: 6px 14px;
-    font-size: 12px;
+    border: 1px solid #e9d5ff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 11px;
     font-weight: 500;
-    color: #5b21b6;
+    color: var(--accent-purple);
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    transition: all 0.2s;
-  }
-  
-  .learning-item:hover {
-    background: #f3e8ff;
-    transform: translateY(-1px);
-  }
-  
-  .learning-item i {
-    font-size: 12px;
-    color: #8b5cf6;
+    gap: 5px;
   }
   
   .learning-note {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 11px;
-    color: #7c3aed;
-    font-style: italic;
+    color: var(--accent-purple);
     display: flex;
     align-items: center;
     gap: 6px;
-  }
-  
-  .badge {
-    display: inline-block;
-    background: #e4f0e2;
-    color: #2c6e2f;
-    border-radius: 20px;
-    font-size: 9px;
-    font-weight: 600;
-    padding: 2px 8px;
-    margin-left: 8px;
+    font-weight: 500;
   }
   
   .summary-text {
-    font-size: 13px;
-    color: #2e2e2e;
+    font-size: 13.5px;
+    color: var(--text-muted);
     line-height: 1.65;
   }
   
   .project-link {
     font-size: 11px;
-    color: var(--color-accent-blue);
+    color: var(--accent-blue);
     text-decoration: none;
-    font-weight: 500;
-    background: #f0f5fc;
-    padding: 2px 8px;
-    border-radius: 20px;
-    transition: background 0.2s;
+    font-weight: 600;
+    background: #f0f7ff;
+    padding: 3px 10px;
+    border-radius: 6px;
+    transition: all 0.2s;
     display: inline-flex;
     align-items: center;
     gap: 4px;
   }
   
   .project-link:hover {
-    background: #e2eef9;
+    background: #e0edfe;
+  }
+  
+  .badge {
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    margin-left: 8px;
   }
   
   .social-links-compact {
     display: flex;
-    gap: 12px;
-    margin-top: 8px;
-    margin-bottom: 6px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 4px;
   }
   
   .social-btn-sm {
@@ -306,32 +341,32 @@
     align-items: center;
     gap: 6px;
     font-size: 11px;
-    padding: 4px 12px;
-    border-radius: 40px;
+    padding: 5px 12px;
+    border-radius: 6px;
     text-decoration: none;
-    font-weight: 500;
-    border: 0.5px solid;
+    font-weight: 600;
+    border: 1px solid;
   }
   
   .social-btn-sm.yt {
-    background: #fff2f0;
-    color: #b52b1e;
-    border-color: #fad6d1;
+    background: #fef2f2;
+    color: #b91c1c;
+    border-color: #fecaca;
   }
   
   .social-btn-sm.ig {
-    background: #fcf3fa;
-    color: #9c2e8b;
-    border-color: #e7c0e0;
+    background: #fdf2f8;
+    color: #be185d;
+    border-color: #fbcfe8;
   }
   
   .cert-item {
-    font-size: 12px;
-    padding: 8px 0;
-    border-bottom: 0.5px solid #ececec;
+    font-size: 12.5px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
   
   .cert-item:last-child {
@@ -339,97 +374,55 @@
   }
   
   .cert-star {
-    color: #b0691a;
-    font-size: 14px;
-    flex-shrink: 0;
-    width: 22px;
+    color: #f59e0b;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
   }
   
   .cert-thumb {
-    width: 38px;
+    width: 40px;
     height: 28px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 0.5px solid #d0d0d0;
+    border-radius: 4px;
+    border: 1px solid var(--border-light);
     cursor: pointer;
     transition: transform 0.2s;
   }
-  
+
   .cert-thumb:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   
   .book-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #e8f5e9;
-    color: #2d6a4f;
-    padding: 4px 12px;
-    border-radius: 20px;
+    background: #ecfdf5;
+    color: #047857;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 11px;
-    font-weight: 500;
-    transition: all 0.2s;
-    border: 0.5px solid #c8e6c9;
+    border: 1px solid #a7f3d0;
   }
-  
+
   .book-link:hover {
-    background: #c8e6c9;
-    transform: translateY(-1px);
-  }
-  
-  .lang-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .lang-tag {
-    background: var(--color-background-secondary);
-    border: 0.5px solid #e0e0e0;
-    border-radius: 30px;
-    padding: 4px 16px;
-    font-size: 12px;
-  }
-  
-  /* Interest tags (to fill bottom gap) */
-  .interest-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
-  }
-  
-  .interest-tag {
-    background: #f0f2f5;
-    border-radius: 20px;
-    padding: 4px 12px;
-    font-size: 11px;
-    font-weight: 500;
-    color: #2c3e50;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .interest-tag i {
-    font-size: 12px;
-    color: #5a6e7c;
+    background: #d1fae5;
   }
   
   .footer {
     margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--color-border-tertiary);
-    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   
   .social-footer {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    gap: 10px;
   }
   
   .social-footer a {
@@ -438,33 +431,25 @@
     justify-content: center;
     width: 36px;
     height: 36px;
-    background: var(--color-background-secondary);
-    border-radius: 50%;
+    background: #f8fafc;
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
     text-decoration: none;
-    transition: all 0.25s ease;
-    border: 0.5px solid var(--color-border-tertiary);
-    color: #555;
-  }
-  
-  .social-footer a i {
-    font-size: 18px;
+    color: var(--text-muted);
+    transition: all 0.2s;
   }
   
   .social-footer a:hover {
-    transform: translateY(-2px);
     background: white;
-    border-color: #bbb;
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
   }
   
-  .social-footer a:hover .ti-brand-instagram { color: #d62976; }
-  .social-footer a:hover .ti-brand-linkedin { color: #0a66c2; }
-  .social-footer a:hover .ti-brand-github { color: #000; }
-  
   .footer-copyright {
-    font-size: 10px;
-    color: #aaa;
-    margin-top: 0.75rem;
-    letter-spacing: 0.3px;
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 500;
   }
   
   .lightbox {
@@ -474,78 +459,32 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(15, 23, 42, 0.9);
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
   }
   
-  .lightbox.open {
-    display: flex;
-  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 90%; max-height: 85vh; border-radius: 8px; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+  .lightbox-close { position: absolute; top: 24px; right: 32px; color: white; font-size: 36px; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+  .lightbox-close:hover { opacity: 1; }
   
-  .lightbox img {
-    max-width: 90%;
-    max-height: 85vh;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border: 2px solid white;
-  }
-  
-  .lightbox-close {
-    position: absolute;
-    top: 20px;
-    right: 28px;
-    color: white;
-    font-size: 36px;
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  
-  @media (max-width: 680px) {
-    .resume {
-      padding: 1.5rem 1rem 1rem;
-    }
-    .two-col {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-    .header {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .header-text {
-      text-align: center;
-    }
-    .contact-row {
-      justify-content: center;
-    }
-    .name {
-      font-size: 32px;
-    }
-    .social-footer a {
-      width: 32px;
-      height: 32px;
-    }
-    .social-footer a i {
-      font-size: 16px;
-    }
-    .social-footer {
-      gap: 1rem;
-    }
+  @media (max-width: 768px) {
+    .resume { padding: 1.5rem; margin: 0; border-radius: 0; border: none; }
+    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+    .header { flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+    .name { justify-content: center; font-size: 36px; }
+    .contact-row { justify-content: center; }
+    .footer { flex-direction: column; text-align: center; }
   }
   
   @media print {
-    .footer {
-      display: none;
-    }
-  }
-  
-  .ti {
-    font-size: 1.05em;
-    vertical-align: middle;
+    body { background: white; }
+    .resume { box-shadow: none; margin: 0; padding: 0; border: none; max-width: 100%; }
+    .footer, .lightbox { display: none; }
+    .section { break-inside: avoid; }
   }
 </style>
 </head>
@@ -553,16 +492,15 @@
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="Certificate preview" onclick="event.stopPropagation()" />
+  <img id="lightbox-img" src="" alt="Certificate" onclick="event.stopPropagation()" />
 </div>
 
 <div class="resume">
-
   <div class="header">
-    <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780227266/57b3c985-6692-4127-9f35-fe10a0ac492b_ikdwza.jpg" alt="Aman Kumar profile" class="profile-img" />
+    <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780227266/57b3c985-6692-4127-9f35-fe10a0ac492b_ikdwza.jpg" alt="Aman Kumar" class="profile-img" />
     <div class="header-text">
-      <h1 class="name">Aman Kumar</h1>
-      <p class="tagline">AI Product Builder · Author · Agentic AI Enthusiast · Content Creator</p>
+      <h1 class="name">Aman Kumar <span class="top-badge">Top 1% Candidate</span></h1>
+      <p class="tagline">AI Product Builder | Published Author | Creator</p>
       <div class="contact-row">
         <span><i class="ti ti-map-pin"></i> UP, India</span>
         <span><i class="ti ti-phone"></i> +91 9369786632</span>
@@ -573,13 +511,44 @@
   </div>
 
   <div class="section">
-    <div class="section-title">Summary</div>
-    <p class="summary-text">Motivated B.Tech ECE student and published author with hands-on experience building and deploying AI-powered web applications, productivity tools, and content platforms. Built 6+ live web applications, developed a digital audience of 15,000+ subscribers, and authored the book "DecodeTheBranddd". Passionate about Agentic AI, AI Automation, and creating practical solutions that improve user productivity and accessibility.</p>
+    <div class="section-title">Professional Summary</div>
+    <p class="summary-text">Motivated B.Tech student, Founder, and published author with hands-on experience building and deploying AI-powered web applications, productivity tools, and content platforms. Built 6+ live web applications, scaled a digital audience of 15,000+ subscribers, and authored the book "DecodeTheBranddd". Passionate about Agentic AI, AI Automation, and creating practical solutions that improve user productivity and accessibility.</p>
   </div>
 
   <div class="two-col">
-    <!-- LEFT COLUMN -->
     <div>
+      <div class="section">
+        <div class="section-title">Experience</div>
+        
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Founder & Product Builder</span>
+            <span class="entry-meta">2026 – Present</span>
+          </div>
+          <div class="entry-sub">ZOONI (Fashion-Tech Startup) | Mumbai, India</div>
+          <ul class="bullets">
+            <li>Identified the lack of personalised style guidance while working at Zudio and founded ZOONI to help Indian consumers discover what suits them. <a href="https://zooni-com-mumbai.netlify.app" target="_blank" rel="noopener noreferrer" class="project-link" style="font-size:10px; padding:2px 8px; margin-left:4px;">Website</a></li>
+            <li>Designed the customer journey and business model: free AI Style Profile, personalized recommendations, and a human personal stylist.</li>
+            <li>Developed the website, customer-facing experience, branding, and initial acquisition funnel.</li>
+            <li>Conceptualized a fashion decision-support system based on body build, colours, occasion, budget, location, wardrobe, and preferences.</li>
+            <li>Led product ideation, UX decisions, marketing experiments, and go-to-market execution independently.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-title">Sales Officer</span>
+            <span class="entry-meta">6 Months</span>
+          </div>
+          <div class="entry-sub">Zudio (Trent Limited)</div>
+          <ul class="bullets">
+            <li>Assisted customers with fashion selection, sizing, and styling suggestions to drive conversions.</li>
+            <li>Gained hands-on understanding of Indian fashion buying behaviour and trends, which directly inspired the creation of ZOONI.</li>
+            <li>Supported merchandise display, stock replenishment, and billing while working toward daily and monthly sales targets.</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="section">
         <div class="section-title">Education</div>
         <div class="entry">
@@ -587,13 +556,12 @@
             <span class="entry-title">B.Tech — Electronics & Communication</span>
             <span class="entry-meta">2023 – 2027</span>
           </div>
-          <div class="entry-sub">MJPRU,Bareilly</div>
-  
+          <div class="entry-sub">MJPRU, Rohilkhand</div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-title">Skills & Expertise</div>
+        <div class="section-title">Core Competencies</div>
         <div class="skills-grid">
           <span class="skill-tag highlight">Agentic AI</span>
           <span class="skill-tag highlight">Prompt Engineering</span>
@@ -604,144 +572,62 @@
           <span class="skill-tag">Git & GitHub</span>
           <span class="skill-tag">Deployment</span>
           <span class="skill-tag">Content Strategy</span>
-          <span class="skill-tag">Digital Branding</span>
           <span class="skill-tag">Creative Writing</span>
-          <span class="skill-tag">Brand Strategy</span>
         </div>
       </div>
 
       <div class="section">
         <div class="section-title">Currently Building</div>
         <div class="learning-section">
-          <div class="learning-header">
-            <i class="ti ti-brain"></i>
-            <span>Deepening Agentic AI Expertise</span>
-          </div>
+          <div class="learning-header"><i class="ti ti-brain"></i><span>Deepening Agentic AI Expertise</span></div>
           <div class="learning-grid">
             <span class="learning-item"><i class="ti ti-robot"></i> Multi-Agent Systems</span>
             <span class="learning-item"><i class="ti ti-code"></i> LangChain & LangGraph</span>
-            <span class="learning-item"><i class="ti ti-database"></i> Vector Databases</span>
+            <span class="learning-item"><i class="ti ti-database"></i> Vector DB</span>
             <span class="learning-item"><i class="ti ti-message-circle"></i> Advanced RAG</span>
             <span class="learning-item"><i class="ti ti-chart-arrows"></i> AI Orchestration</span>
-            <span class="learning-item"><i class="ti ti-api"></i> LLM Fine-tuning</span>
           </div>
-          <div class="learning-note">
-            <i class="ti ti-rocket"></i>
-            <span>Building autonomous AI agents for real-world productivity use cases</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <div class="section-title">Languages</div>
-        <div class="lang-row">
-          <span class="lang-tag"><i class="ti ti-language"></i> English</span>
-          <span class="lang-tag"><i class="ti ti-language"></i> Hindi</span>
-        </div>
-      </div>
-
-      <!-- ACHIEVEMENTS SECTION -->
-      <div class="section">
-        <div class="section-title">Achievements & Recognition</div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-book"></i></span>
-          <span style="flex:1"><strong>Published Author</strong> — "DecodeTheBranddd"</span>
-          <a href="https://drive.google.com/file/d/1mAhCUpajTWJ6uPaxsZejN5eH_lew0tRx/view?usp=drivesdk" target="_blank" class="book-link"><i class="ti ti-file-text"></i> Read PDF</a>
-        </div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-trophy"></i></span>
-          <span style="flex:1">1st Place — Ideathon 2.0, RIF / MJPRU</span>
-          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168389/IMG_1824_ddto1z.jpg" alt="Ideathon cert" class="cert-thumb" onclick="openLightbox(this.src)" />
-        </div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-certificate"></i></span>
-          <span style="flex:1">Startup India Innovation Participation</span>
-          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168381/IMG_1825_r7cy3i.jpg" alt="Startup India" class="cert-thumb" onclick="openLightbox(this.src)" />
-        </div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-microphone-2"></i></span>
-          <span style="flex:1">Next-Gen AI in Electronics Seminar</span>
-          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168386/IMG_1799_xv1og8.jpg" alt="AI seminar" class="cert-thumb" onclick="openLightbox(this.src)" />
-        </div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-world-code"></i></span>
-          <span>6+ live AI-powered web applications deployed & maintained</span>
-        </div>
-        
-        <div class="cert-item">
-          <span class="cert-star"><i class="ti ti-brand-youtube"></i></span>
-          <span>15,000+ YouTube subscribers | Digital brand growth</span>
-        </div>
-      </div>
-
-      <!-- NEW SECTION: INTERESTS & INVOLVEMENT (fills remaining gap) -->
-      <div class="section">
-        <div class="section-title">Beyond Code</div>
-        <div class="interest-grid">
-          <span class="interest-tag"><i class="ti ti-microphone"></i> Tech Blogging</span>
-          <span class="interest-tag"><i class="ti ti-users"></i> Mentoring</span>
-          <span class="interest-tag"><i class="ti ti-book"></i> Reading</span>
-          <span class="interest-tag"><i class="ti ti-heart"></i> Open Source</span>
-          <span class="interest-tag"><i class="ti ti-camera"></i> Content Creation</span>
-          <span class="interest-tag"><i class="ti ti-brand-python"></i> AI Ethics</span>
-          <span class="interest-tag"><i class="ti ti-brand-book"></i> Curisity Driven</span>
-          <span class="interest-tag"><i class="ti ti-brand-heart"></i> Product Thinking</span>
-          <span class="interest-tag"><i class="ti ti-brand-user"></i> Automation First</span>
-           <span class="interest-tag"><i class="ti ti-brand-python"></i> Design mindset</span>
-           <span class="interest-tag"><i class="ti ti-brand-camera"></i> Digital Innovation</span>
-           <span class="interest-tag"><i class="ti ti-brand-book"></i> Market Mentality</span>
-        </div>
-        <div style="margin-top: 8px; font-size: 11px; color: #5a6e7c; line-height: 1.5;">
-          <i class="ti ti-pen"></i> “Building technology that empowers creators and learners.”
-          <i class="ti ti-pen"></i> “Turning ideas into practical AI-powered products.”
+          <div class="learning-note"><i class="ti ti-rocket"></i> Building autonomous AI agents for real-world productivity</div>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT COLUMN -->
     <div>
       <div class="section">
-        <div class="section-title">Featured Projects</div>
+        <div class="section-title">Key Projects</div>
 
         <div class="entry">
           <div class="entry-header">
             <span class="entry-title">ZooniAI</span>
-            <a href="https://amanlakeviya.github.io/ZooniAI/" target="_blank" class="project-link"><i class="ti ti-external-link"></i> Live Demo</a>
+            <a href="https://amanlakeviya.github.io/ZooniAI/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <i class="ti ti-external-link"></i></a>
           </div>
-          <div class="entry-sub">Unified AI search · multi-platform query workflow</div>
+          <div class="entry-sub">Unified AI search & multi-agent query system</div>
           <ul class="bullets">
-            <li>Enables users to search queries and access answers through multiple AI systems from a single interface.</li>
-            <li><strong>Key features:</strong> Unified AI search, quick access to external knowledge sources, improved information discovery.</li>
+            <li>Single interface access to multiple AI systems & knowledge sources.</li>
+            <li>Improved information discovery with parallel query workflows.</li>
           </ul>
         </div>
 
         <div class="entry">
           <div class="entry-header">
-            <span class="entry-title">Zooni Fashion<span class="badge">15K+ YouTube</span></span>
-            <a href="https://amanlakeviya.github.io/ZooniFashion/" target="_blank" class="project-link"><i class="ti ti-external-link"></i> Live Demo</a>
+            <span class="entry-title">Zooni Fashion <span class="badge">15K+ YouTube</span></span>
+            <a href="https://amanlakeviya.github.io/ZooniFashion/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <i class="ti ti-external-link"></i></a>
           </div>
-          <div class="entry-sub">Fashion creator ecosystem · portfolio + affiliate + blog</div>
+          <div class="entry-sub">Creator ecosystem · portfolio + affiliate + blog</div>
           <ul class="bullets">
-            <li>Fashion-focused creator platform connected to YouTube audience of 15,000+ subscribers.</li>
-            <li><strong>Platform features:</strong> Creator portfolio website, affiliate marketing readiness, blog publishing, fashion trend content hub.</li>
+            <li>Built platform for a 15,000+ YouTube creator audience.</li>
+            <li>Integrated affiliate marketing, trend hub, and blog CMS.</li>
           </ul>
           
-          <div style="margin-top: 10px; background: #fefaf5; padding: 8px 10px; border-radius: 12px; border-left: 3px solid #e6a157;">
-            <div style="font-weight: 600; font-size: 11px; letter-spacing: 1px; color: #a05c1a; margin-bottom: 6px;"><i class="ti ti-brand-youtube" style="margin-right: 4px;"></i> Content & Social — Zooni Fashion</div>
+          <div style="margin-top: 10px; background: #fefaf5; padding: 10px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+            <div style="font-weight: 600; font-size: 10px; color: #b45309; margin-bottom: 6px;"><i class="ti ti-brand-youtube"></i> Content & Social — Zooni Fashion</div>
             <div class="social-links-compact">
-              <a href="https://youtube.com/@zoonifashionn" target="_blank" class="social-btn-sm yt"><i class="ti ti-brand-youtube"></i> @zoonifashionn</a>
-              <a href="http://instagram.com/zoonifashionn" target="_blank" class="social-btn-sm ig"><i class="ti ti-brand-instagram"></i> @zoonifashionn</a>
+              <a href="https://youtube.com/@zoonifashionn" target="_blank" rel="noopener noreferrer" class="social-btn-sm yt"><i class="ti ti-brand-youtube"></i> @zoonifashionn</a>
+              <a href="http://instagram.com/zoonifashionn" target="_blank" rel="noopener noreferrer" class="social-btn-sm ig"><i class="ti ti-brand-instagram"></i> @zoonifashionn</a>
             </div>
-            <ul class="bullets" style="margin-top: 5px;">
-              <li>Built & managed Zooni Fashion digital brand from scratch — 15,000+ subscribers on YouTube.</li>
-              <li>Short-form & long-form video content production using AI-assisted editing & scripting.</li>
-              <li>Audience engagement across Instagram & YouTube, brand collaborations, analytics optimization.</li>
-              <li>AI tools for content ideation, thumbnails, trend analysis & workflow automation.</li>
+            <ul class="bullets" style="margin-top: 4px;">
+              <li>Built brand from scratch: 15K+ YouTube subscribers.</li>
+              <li>AI-assisted editing, scripting & cross-platform engagement.</li>
             </ul>
           </div>
         </div>
@@ -749,93 +635,103 @@
         <div class="entry">
           <div class="entry-header">
             <span class="entry-title">Fashion Tools Hub</span>
-            <a href="https://amanlakeviya.github.io/FashionToolHub/" target="_blank" class="project-link"><i class="ti ti-external-link"></i> Live Demo</a>
+            <a href="https://amanlakeviya.github.io/FashionToolHub/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <i class="ti ti-external-link"></i></a>
           </div>
-          <div class="entry-sub">Centralized dashboard · tool aggregation for creators</div>
+          <div class="entry-sub">Dashboard aggregating 10+ fashion tools</div>
           <ul class="bullets">
-            <li>Aggregates fashion-related tools into a single platform for productivity enhancement.</li>
-            <li><strong>Key features:</strong> Tool aggregation, single-dashboard access, simplified workflow.</li>
+            <li>Single dashboard for productivity enhancement & simplified creator workflow.</li>
           </ul>
         </div>
 
         <div class="entry">
           <div class="entry-header">
             <span class="entry-title">My AI Tools</span>
-            <a href="https://amanlakeviya.github.io/MyAiTool/" target="_blank" class="project-link"><i class="ti ti-brand-github"></i> Live Demo</a>
+            <a href="https://amanlakeviya.github.io/VIJDownloader/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <i class="ti ti-external-link"></i></a>
           </div>
-          <div class="entry-sub">Organized AI tool library · resource management</div>
+          <div class="entry-sub">AI tool library & resource management</div>
           <ul class="bullets">
-            <li>Centralized platform for organizing and accessing frequently used AI tools.</li>
-            <li><strong>Key features:</strong> AI tool categorization, centralized access, productivity-focused design.</li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-header">
-            <span class="entry-title">Lakeviya Aggretor</span>
-            <a href="https://github.com/amanlakeviya" target="_blank" class="project-link"><i class="ti ti-brand-github"></i> Live Demo</a>
-          </div>
-          <div class="entry-sub">AI trend tracking · news aggregation</div>
-          <ul class="bullets">
-            <li>Platform for AI-related resources, updates, and trending information.</li>
-            <li><strong>Key features:</strong> AI news aggregation, trend tracking, resource discovery.</li>
+            <li>Centralized AI tool categorization and productivity-focused directory.</li>
           </ul>
         </div>
 
         <div class="entry">
           <div class="entry-header">
             <span class="entry-title">VIJ Downloader</span>
-            <a href="https://amanlakeviya.github.io/VIJDownloader" target="_blank" class="project-link"><i class="ti ti-external-link"></i> Live Demo</a>
+            <a href="https://amanlakeviya.github.io/VIJDownloader" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo <i class="ti ti-external-link"></i></a>
           </div>
           <div class="entry-sub">Multi-platform video download utility</div>
           <ul class="bullets">
-            <li>Centralized access to social media video downloading services.</li>
-            <li><strong>Key features:</strong> Multi-platform support, centralized workflow, simplified content access.</li>
+            <li>Centralized, fast downloading workflow for YouTube, Instagram, and Facebook.</li>
           </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Honors & Awards</div>
+        
+        <div class="cert-item">
+          <span class="cert-star"><i class="ti ti-book"></i></span>
+          <span style="flex:1;"><strong>Published Author</strong> — "DecodeTheBranddd"</span>
+          <!-- Yahan Link Fix kiya gaya hai -->
+          <a href="https://drive.google.com/file/d/1mAhCUpajTWJ6uPaxsZejN5eH_lew0tRx/view" target="_blank" rel="noopener noreferrer" class="book-link">Read PDF</a>
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-star"><i class="ti ti-trophy"></i></span>
+          <span style="flex:1;">1st Place — Ideathon 2.0, RIF / MJPRU</span>
+          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168389/IMG_1824_ddto1z.jpg" class="cert-thumb" onclick="openLightbox(this.src)" alt="Ideathon Certificate">
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-star"><i class="ti ti-certificate"></i></span>
+          <span style="flex:1;">Startup India Innovation Participant</span>
+          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168381/IMG_1825_r7cy3i.jpg" class="cert-thumb" onclick="openLightbox(this.src)" alt="Startup India Certificate">
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-star"><i class="ti ti-microphone-2"></i></span>
+          <span style="flex:1;">Next-Gen AI in Electronics Seminar</span>
+          <img src="https://res.cloudinary.com/ddlc9pfgn/image/upload/v1780168386/IMG_1799_xv1og8.jpg" class="cert-thumb" onclick="openLightbox(this.src)" alt="AI Seminar Certificate">
+        </div>
+        
+        <div class="cert-item">
+          <span class="cert-star"><i class="ti ti-world-code"></i></span>
+          <span>6+ live AI web apps deployed & maintained</span>
         </div>
       </div>
 
       <div class="section">
         <div class="section-title">Leadership & Entrepreneurship</div>
         <ul class="bullets">
-          <li><strong>1st Position in Ideathon 2.0</strong> — Rohilkhand Incubation Foundation, MJPRU Team Leader</li>
+          <li>Founded & scaled Zooni Fashion to 15,000+ YouTube subscribers.</li>
+          <li><strong>Winner — Ideathon 2.0</strong> (Rohilkhand Incubation Foundation).</li>
+          <li>Published Author: "DecodeTheBranddd" — brand strategy & storytelling.</li>
+        </ul>
       </div>
     </div>
   </div>
 
   <div class="footer">
     <div class="social-footer">
-      <a href="https://www.instagram.com/aman.lakeviya?igsh=MXBra3V1ZjlucHRxeQ==&utm_source=ig_contact_invite" target="_blank"><i class="ti ti-brand-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/aman-kumar-44a8a6288" target="_blank"><i class="ti ti-brand-linkedin"></i></a>
-      <a href="https://github.com/amanlakeviya" target="_blank"><i class="ti ti-brand-github"></i></a>
+      <a href="https://www.instagram.com/aman.lakeviya" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="ti ti-brand-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/aman-kumar-44a8a6288" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+      <a href="https://github.com/amanlakeviya" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ti ti-brand-github"></i></a>
     </div>
-    <div class="footer-copyright">© 2026 Aman Kumar — Author of "DecodeTheBranddd" & AI Product Builder</div>
+    <div class="footer-copyright">© 2026 Aman Kumar — Author & AI Product Builder</div>
   </div>
 </div>
 
 <script>
   function openLightbox(src) {
-    const lb = document.getElementById('lightbox');
-    const img = document.getElementById('lightbox-img');
-    if (lb && img) {
-      img.src = src;
-      lb.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
   function closeLightbox() {
-    const lb = document.getElementById('lightbox');
-    if (lb) {
-      lb.classList.remove('open');
-      document.body.style.overflow = '';
-    }
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
   }
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      const lb = document.getElementById('lightbox');
-      if (lb && lb.classList.contains('open')) closeLightbox();
-    }
-  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
 </script>
 </body>
 </html>
